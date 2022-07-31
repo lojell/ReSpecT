@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "jsx": "react",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist/js",
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}

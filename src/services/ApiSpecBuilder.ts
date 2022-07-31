@@ -1,0 +1,387 @@
+import { ComponentsObject, ContentObject, MediaTypeObject, OpenApiBuilder, OpenAPIObject, OperationObject, ParameterObject, PathItemObject, PathsObject, ReferenceObject, RequestBodyObject, ResponseObject, ResponsesObject, SchemaObject } from "openapi3-ts";
+import { QueryString, PostData, Param, Response } from 'har-format';
+import UrlEx from "../models/UrlEx";
+import { capitalize } from "../utils/strings";
+import HAR from "../models/HAR";
+import { mergeDeep } from "../utils/object";
+
+export interface OpenApiSpecBuildParams {
+    title: string;
+    description: string;
+    requests: HAR[];
+    baseUrls: string[]
+}
+
+export interface BaseUrlStat {
+    url: string,
+    count: number
+}
+
+const schemaTypeMapping = {
+    "undefined": 'null',
+    "object": 'object',
+    "boolean": 'boolean',
+    "number": 'number',
+    "bigint": 'integer',
+    "string": 'string',
+    "symbol": 'string',
+    "array": "array",
+    "function": undefined
+}
+
+export default class ApiSpecBuilder {
+
+    // Returns OpenApiV3 builder instance
+    static createOpenApiV3(): ApiSpecBuilder {
+        return new ApiSpecBuilder();
+    }
+
+    // Returns all base urls with most notable first
+    // TODO: we should automatically detect api like url: api.domain.com, domain.com/api, domain.com/api/V1 etc.
+    static getBaseUrls(hars: HAR[], sortByUsage = true): BaseUrlStat[] {
+        // if (!requests?.length)
+        //     throw new Error('There are no requests to evaluate');
+
+        const baseUrlMap = hars
+            .map(r => r.urlEx.url.origin)
+            .filter(r => r !== "null")
+            .reduce((agr, baseUrl) => {
+                agr[baseUrl] = 1 + (agr[baseUrl] || 0);
+                return agr;
+            }, {});
+
+        let baseUrls = Object.entries(baseUrlMap)
+            .map(([key, value]) => ({ url: key, count: +value }));
+
+        if (sortByUsage)
+            baseUrls = baseUrls.sort((a, b) => a.count < b.count ? 0 : -1);
+
+        // if (!baseUrls?.length)
+        //     throw new Error('There is no base url');
+
+        return baseUrls || [];
+    }
+
+    // Build Specification
+    build(params: OpenApiSpecBuildParams): OpenAPIObject {
+        if (!params.baseUrls.length) throw new Error('baseUrls is empty');
+        if (!params.title) throw new Error('title is empty');
+
+        // Create a empty stub OpenApi Spec
+        const openApiSpec = OpenApiBuilder.create().getSpec();
+        if (!params.requests?.length)
+            return openApiSpec;
+
+        openApiSpec.info.title = params.title;
+        openApiSpec.info.description = params.description;
+        openApiSpec.servers = params.baseUrls.map(x => ({ url: x }));
+
+        const { paths, components } = this.buildPaths(params.requests);
+        openApiSpec.paths = paths;
+        openApiSpec.components = components;
+
+        return openApiSpec;
+    }
+
+    buildPaths(hars: HAR[]): { paths: PathsObject, components: ComponentsObject } {
+        const paths: PathsObject = {};
+        const components: ComponentsObject = { schemas: {} };
+
+        // Group by PathTemplate and then by method
+        const groupedByPathTemplateRequests = hars
+            .sort((a, b) => a.urlEx.pathTemplate > b.urlEx.pathTemplate ? 1 : -1)
+            .reduce((root, value) => {
+                const pathTemplateKey = value.urlEx.pathTemplate;
+                const methodKey = value.request.request.method.toLowerCase();
+
+                root[pathTemplateKey] = {
+                    ...root[pathTemplateKey]
+                };
+
+                root[pathTemplateKey][methodKey] = [
+                    ...(root[pathTemplateKey][methodKey] || []),
+                    value
+                ]
+                return root;
+            }, {}) as Record<string, Record<string, HAR[]>>;
+
+        for (const [pathTemplate, groupedByMethodRequests] of Object.entries(groupedByPathTemplateRequests)) {
+
+            const path: PathItemObject = {};
+            paths[pathTemplate] = path;
+
+            for (const [method, methodRequests] of Object.entries(groupedByMethodRequests)) {
+                const verbFriendlyName = HAR.verbFriendlyName(method);
+                const [firstRequests] = methodRequests;
+
+                const parameters = this.buildParameters(methodRequests.map(x => x.urlEx));
+                const { requestBody, requestSchemas } = this.buildRequestBody(methodRequests) || {};
+                const { responsesObject: responses, responseSchemas } = this.buildResponses(methodRequests) || {};
+
+                // Merge Schemas
+                // TODO: the process might be difficult we should elaborate more soficticated 
+                components.schemas = {
+                    ...components.schemas,
+                    ...requestSchemas,
+                    ...responseSchemas
+                };
+
+                path[method] = {
+                    operationId: (verbFriendlyName + capitalize(firstRequests.urlEx.pathName)),
+
+                    // description: 'Generated by reSpecT',
+                    summary: `${capitalize(verbFriendlyName)} ${capitalize(firstRequests.urlEx.pathName)} record`,
+
+                    parameters,
+                    requestBody,
+                    responses,
+
+                    // TODO: to consider fill out later on
+                    // tags: [], // TODO: add in future
+                    // callbacks: '', // CallbacksObject
+                    // deprecated: false,
+                    // externalDocs: '', // ExternalDocumentationObject
+                    // security: [], // SecurityRequirementObject[]
+                    // servers: [] ServerObject[]
+                } as OperationObject
+            }
+        }
+
+        return { paths, components };
+    }
+
+    // TODO: 
+    // 0. cover all cases for https://swagger.io/docs/specification/serialization/
+    // 1. figure out the value type, because chrome also has a string
+    // 3. make settings for configuring a required field 
+    buildParameters(urls: UrlEx[]): ParameterObject[] | undefined {
+        if (!urls?.length)
+            return undefined;
+
+        // TODO: we just need first one so far
+        const [pathItem] = urls.map(x => x.pathItems);
+        const pathParameters = pathItem.filter(x => x.paramName).map(parameter => {
+            let schema = {
+                type: parameter.kind === 'number' ? 'number' : 'string',
+            } as SchemaObject;
+
+            const parameterObject: ParameterObject = {
+                name: parameter.paramName,
+                description: parameter.paramName,
+                in: 'path',
+                required: true,
+                schema
+            }
+
+            return parameterObject;
+        });
+
+        const queryStrings = urls
+            .flatMap(x => x.queryString)
+            .filter(x => x)
+            .reduce((root, value) => {
+                const existingValues = root[value.name] || [];
+                root[value.name] = [...new Set([...existingValues, value.value])]
+                return root;
+            }, {}) as Record<string, Array<string>>;
+
+        // TODO: possible cwe can treat the parameters aas a enum
+        const queryParameters = Object.entries(queryStrings).map(([parameter, values]) => {
+
+            const isArray = values.length > 1;
+            const isNumeric = values.every(val => !isNaN(parseFloat(val)));
+            const isBoolean = values.every(val => ['true', 'false'].includes(val.toLowerCase()));
+
+            let schema = {
+
+            } as SchemaObject;
+
+            if (isArray) {
+                schema = {
+                    type: 'array',
+                    items: {
+                        type: isNumeric
+                            ? 'number'
+                            : isBoolean
+                                ? 'boolean'
+                                : 'string'
+                    } as SchemaObject
+                }
+            } else {
+                schema = {
+                    type: isNumeric
+                        ? 'number'
+                        : isBoolean
+                            ? 'boolean'
+                            : 'string'
+                }
+            }
+
+            const parameterObject: ParameterObject = {
+                name: parameter,
+                description: parameter,
+                in: 'query',
+                required: false,
+                style: 'form',
+                explode: true,
+                schema
+            }
+
+            return parameterObject;
+        });
+
+        return pathParameters?.length || queryParameters?.length
+            ? [...(pathParameters || []), ...(queryParameters || [])]
+            : undefined;
+    }
+
+    // TODO: RequestBodyObject | ReferenceObject;
+    buildRequestBody(hars: HAR[]): { requestBody: RequestBodyObject, requestSchemas: { [schema: string]: SchemaObject; } } | undefined {
+        const postDataHars = hars?.filter(x => x.request.request.postData);
+        if (!postDataHars?.length) return undefined;
+
+        const requestSchemas: { [schema: string]: SchemaObject; } = {};
+
+        const [postDataHar] = postDataHars;
+
+        const isApplicationJsonBody = postDataHars.every(x => x.request.request.postData.text);
+        const isFormUrlEncodedBody = postDataHars.every(x => x.request.request.postData.params);
+
+        const mimeType = isApplicationJsonBody
+            ? "application/json"
+            : isFormUrlEncodedBody
+                ? "application/x-www-form-urlencoded"
+                : (postDataHar.request.request.postData.mimeType
+                    ?.split(';')
+                    .find(x => x.startsWith('application/') || x.startsWith('text') || x.includes('json'))
+                    || 'application/json');
+
+        if (isApplicationJsonBody) {
+            const mergedBody = postDataHars.reduce((root, value) => {
+                try {
+                    const bodyJson = JSON.parse(value.request.request.postData.text);
+                    root = mergeDeep([root, bodyJson]);
+                } catch (error) {
+                    console.error("buildRequestBody.mergeDeep error", error);
+                }
+
+                return root;
+            }, {});
+
+            requestSchemas[postDataHar.schemaName] = this.buildSchemaObject(mergedBody);
+
+        } else if (isFormUrlEncodedBody) {
+            const properties = postDataHars
+                .flatMap(x => x.request.request.postData.params)
+                .reduce((root, currentParam) => {
+                    const isNumeric = !isNaN(parseFloat(currentParam.value));
+                    const isBoolean = ['true', 'false'].includes(currentParam.value.toLowerCase());
+
+                    const newType = isNumeric
+                        ? 'number'
+                        : isBoolean
+                            ? 'boolean'
+                            : 'string';
+
+                    // Merging logic: if types are not matching then we pick up a string as universal type
+                    root[currentParam.name] =
+                        root[currentParam.name] && root[currentParam.name].type !== newType
+                            ? { type: 'string' }
+                            : { type: newType }
+
+                    return root;
+                }, {});
+
+            requestSchemas[postDataHar.schemaName] = {
+                type: 'object',
+                properties
+            }
+        }
+
+        const requestBody: RequestBodyObject = {
+            content: {
+                [mimeType]: {
+                    schema: {
+                        $ref: `#/components/schemas/${postDataHar.schemaName}`
+                    }
+                } as MediaTypeObject
+            },
+            required: true,
+        };
+
+        return { requestBody, requestSchemas };
+    }
+
+    buildResponses(hars: HAR[]): { responsesObject: ResponsesObject, responseSchemas: { [schema: string]: SchemaObject; } } {
+        const responseBodys = hars?.map(x => x.responseBody).filter(x => x);
+        if (!responseBodys?.length) return undefined;
+
+        const [har] = hars;
+        const mergedBody = mergeDeep(responseBodys);
+
+        const responseSchemas: { [schema: string]: SchemaObject; } = {
+            [har.schemaName]: this.buildSchemaObject(mergedBody)
+        };
+
+        const responsesObject = {
+            [`${har.request.response.status}`]: {
+                content: {
+                    [har.request.response.content.mimeType]: {
+                        schema: {
+                            $ref: `#/components/schemas/${har.schemaName}`
+                        }
+                    } as MediaTypeObject
+                }
+            } as ResponseObject
+        } as ResponsesObject;
+
+
+        return { responsesObject, responseSchemas };
+    }
+
+    buildSchemaObject(body: Object | string | null): SchemaObject | undefined {
+
+        if (body === null || body === undefined) {
+            return { type: 'null' };
+        }
+
+        if (typeof body === "string")
+            return { type: 'string' };
+
+        if (Array.isArray(body)) {
+            return {
+                type: 'array',
+                items: body.length > 0 ? this.buildSchemaObject(body[0]) : undefined
+            };
+        }
+
+        if (typeof body === "object") {
+            const properties = Object.entries(body).reduce((root, [name, value]) => {
+                const valueType = Array.isArray(value) ? 'array' : typeof value;
+                const correctType = schemaTypeMapping[valueType];
+
+                root[name] = {
+                    type: correctType
+                }
+
+                if (correctType === 'array') {
+                    root[name].items = value.length > 0 ? this.buildSchemaObject(value[0]) : undefined
+                }
+
+                if (correctType === 'object') {
+                    root[name] = this.buildSchemaObject(value)
+                }
+
+                return root;
+            }, {});
+
+            const schema: SchemaObject = {
+                type: 'object',
+                properties
+            };
+
+            return schema;
+        }
+    }
+}
+

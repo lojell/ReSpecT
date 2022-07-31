@@ -1,0 +1,1796 @@
+{
+    "_initiator": {
+        "type": "script",
+        "stack": {
+            "callFrames": [
+                {
+                    "functionName": "XMLHttpRequest.send",
+                    "scriptId": "102",
+                    "url": "",
+                    "lineNumber": 81,
+                    "columnNumber": 9
+                },
+                {
+                    "functionName": "",
+                    "scriptId": "106",
+                    "url": "https://partners.glovoapp.com/js/datadog-rum-error-tracker-integration.a06c0e03.js",
+                    "lineNumber": 14,
+                    "columnNumber": 21622
+                },
+                {
+                    "functionName": "o",
+                    "scriptId": "106",
+                    "url": "https://partners.glovoapp.com/js/datadog-rum-error-tracker-integration.a06c0e03.js",
+                    "lineNumber": 14,
+                    "columnNumber": 21389
+                },
+                {
+                    "functionName": "",
+                    "scriptId": "101",
+                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                    "lineNumber": 0,
+                    "columnNumber": 4415
+                },
+                {
+                    "functionName": "t.exports",
+                    "scriptId": "101",
+                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                    "lineNumber": 0,
+                    "columnNumber": 2564
+                },
+                {
+                    "functionName": "t.exports",
+                    "scriptId": "101",
+                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                    "lineNumber": 0,
+                    "columnNumber": 6677
+                }
+            ],
+            "parent": {
+                "description": "Promise.then",
+                "callFrames": [
+                    {
+                        "functionName": "c.request",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 60,
+                        "columnNumber": 32972
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 71,
+                        "columnNumber": 111977
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "103",
+                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                        "lineNumber": 0,
+                        "columnNumber": 249857
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 7,
+                        "columnNumber": 87229
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 7,
+                        "columnNumber": 88567
+                    },
+                    {
+                        "functionName": "forEach.t.<computed>",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 7,
+                        "columnNumber": 87652
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 28,
+                        "columnNumber": 17491
+                    },
+                    {
+                        "functionName": "s",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 28,
+                        "columnNumber": 17694
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 28,
+                        "columnNumber": 17753,
+                        "df": null,
+                        "dff": 1 
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 28,
+                        "columnNumber": 17634
+                    },
+                    {
+                        "functionName": "t",
+                        "scriptId": "103",
+                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                        "lineNumber": 0,
+                        "columnNumber": 250467
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "103",
+                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                        "lineNumber": 0,
+                        "columnNumber": 249253
+                    },
+                    {
+                        "functionName": "l",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 7,
+                        "columnNumber": 87229
+                    },
+                    {
+                        "functionName": "",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 7,
+                        "columnNumber": 88567
+                    },
+                    {
+                        "functionName": "forEach.t.<computed>",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 7,
+                        "columnNumber": 87652
+                    },
+                    {
+                        "functionName": "r",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 28,
+                        "columnNumber": 17491
+                    },
+                    {
+                        "functionName": "s",
+                        "scriptId": "101",
+                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                        "lineNumber": 28,
+                        "columnNumber": 17694
+                    }
+                ],
+                "parent": {
+                    "description": "Promise.then",
+                    "callFrames": [
+                        {
+                            "functionName": "r",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17562
+                        },
+                        {
+                            "functionName": "s",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17694
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17753
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17634
+                        },
+                        {
+                            "functionName": "t",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 249400
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 246574
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 203454
+                        },
+                        {
+                            "functionName": "l",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 87229
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 88567
+                        },
+                        {
+                            "functionName": "forEach.t.<computed>",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 87652
+                        },
+                        {
+                            "functionName": "r",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17491
+                        },
+                        {
+                            "functionName": "s",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17694
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17753
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17634
+                        },
+                        {
+                            "functionName": "o",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 203839
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 114681
+                        },
+                        {
+                            "functionName": "l",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 87229
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 88567
+                        },
+                        {
+                            "functionName": "forEach.t.<computed>",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 87652
+                        },
+                        {
+                            "functionName": "r",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17491
+                        },
+                        {
+                            "functionName": "s",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17694
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17753
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 28,
+                            "columnNumber": 17634
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 114970
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 71,
+                            "columnNumber": 5731
+                        },
+                        {
+                            "functionName": "m.dispatch",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 71,
+                            "columnNumber": 7063
+                        },
+                        {
+                            "functionName": "dispatch",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 71,
+                            "columnNumber": 3398
+                        },
+                        {
+                            "functionName": "getOrders",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 183945
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "103",
+                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                            "lineNumber": 0,
+                            "columnNumber": 509615
+                        },
+                        {
+                            "functionName": "",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 91,
+                            "columnNumber": 49260
+                        },
+                        {
+                            "functionName": "t._trySubscribe",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 32602
+                        },
+                        {
+                            "functionName": "t.subscribe",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 32385
+                        },
+                        {
+                            "functionName": "t.call",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 53,
+                            "columnNumber": 202415
+                        },
+                        {
+                            "functionName": "t.subscribe",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 32253
+                        },
+                        {
+                            "functionName": "t.call",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 36226
+                        },
+                        {
+                            "functionName": "t.subscribe",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 32253
+                        },
+                        {
+                            "functionName": "l",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 91,
+                            "columnNumber": 19198
+                        },
+                        {
+                            "functionName": "e._innerSub",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 0,
+                            "columnNumber": 1202
+                        },
+                        {
+                            "functionName": "e._next",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 0,
+                            "columnNumber": 1018
+                        },
+                        {
+                            "functionName": "e.next",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 0,
+                            "columnNumber": 52869
+                        },
+                        {
+                            "functionName": "e._next",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 53,
+                            "columnNumber": 202927
+                        },
+                        {
+                            "functionName": "e.next",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 0,
+                            "columnNumber": 52869
+                        },
+                        {
+                            "functionName": "e._next",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 7,
+                            "columnNumber": 131686
+                        },
+                        {
+                            "functionName": "e.next",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 0,
+                            "columnNumber": 52869
+                        },
+                        {
+                            "functionName": "m",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 76,
+                            "columnNumber": 34699
+                        },
+                        {
+                            "functionName": "e._execute",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 76,
+                            "columnNumber": 33107
+                        },
+                        {
+                            "functionName": "e.execute",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 76,
+                            "columnNumber": 32923
+                        },
+                        {
+                            "functionName": "e.flush",
+                            "scriptId": "101",
+                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                            "lineNumber": 76,
+                            "columnNumber": 34175
+                        }
+                    ],
+                    "parent": {
+                        "description": "setInterval",
+                        "callFrames": [
+                            {
+                                "functionName": "e.requestAsyncId",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 76,
+                                "columnNumber": 32626
+                            },
+                            {
+                                "functionName": "e.schedule",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 76,
+                                "columnNumber": 32524
+                            },
+                            {
+                                "functionName": "t.schedule",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 76,
+                                "columnNumber": 33631
+                            },
+                            {
+                                "functionName": "e.schedule",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 76,
+                                "columnNumber": 34047
+                            },
+                            {
+                                "functionName": "",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 76,
+                                "columnNumber": 34591
+                            },
+                            {
+                                "functionName": "t._trySubscribe",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 32602
+                            },
+                            {
+                                "functionName": "t.subscribe",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 32385
+                            },
+                            {
+                                "functionName": "t.call",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 131357
+                            },
+                            {
+                                "functionName": "t.subscribe",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 32253
+                            },
+                            {
+                                "functionName": "t.call",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 53,
+                                "columnNumber": 202415
+                            },
+                            {
+                                "functionName": "t.subscribe",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 32253
+                            },
+                            {
+                                "functionName": "t.call",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 745
+                            },
+                            {
+                                "functionName": "t.subscribe",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 32253
+                            },
+                            {
+                                "functionName": "t.call",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 53,
+                                "columnNumber": 202415
+                            },
+                            {
+                                "functionName": "t.subscribe",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 7,
+                                "columnNumber": 32253
+                            },
+                            {
+                                "functionName": "e.complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 91,
+                                "columnNumber": 5151
+                            },
+                            {
+                                "functionName": "e._complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 53,
+                                "columnNumber": 203228
+                            },
+                            {
+                                "functionName": "e.complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 53033
+                            },
+                            {
+                                "functionName": "e._complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 53334
+                            },
+                            {
+                                "functionName": "e.notifyComplete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 1569
+                            },
+                            {
+                                "functionName": "e._complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 91,
+                                "columnNumber": 18777
+                            },
+                            {
+                                "functionName": "e.complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 53033
+                            },
+                            {
+                                "functionName": "e._complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 53334
+                            },
+                            {
+                                "functionName": "e.complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 53033
+                            },
+                            {
+                                "functionName": "e._complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 53,
+                                "columnNumber": 203228
+                            },
+                            {
+                                "functionName": "e.complete",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 53033
+                            },
+                            {
+                                "functionName": "",
+                                "scriptId": "101",
+                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                "lineNumber": 0,
+                                "columnNumber": 66465
+                            }
+                        ],
+                        "parent": {
+                            "description": "Promise.then",
+                            "callFrames": [
+                                {
+                                    "functionName": "",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 0,
+                                    "columnNumber": 66424
+                                },
+                                {
+                                    "functionName": "t._trySubscribe",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 32602
+                                },
+                                {
+                                    "functionName": "t.subscribe",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 32385
+                                },
+                                {
+                                    "functionName": "",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 91,
+                                    "columnNumber": 49348
+                                },
+                                {
+                                    "functionName": "t._trySubscribe",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 32602
+                                },
+                                {
+                                    "functionName": "t.subscribe",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 32385
+                                },
+                                {
+                                    "functionName": "t.call",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 53,
+                                    "columnNumber": 202415
+                                },
+                                {
+                                    "functionName": "t.subscribe",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 32253
+                                },
+                                {
+                                    "functionName": "t.call",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 36226
+                                },
+                                {
+                                    "functionName": "t.subscribe",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 32253
+                                },
+                                {
+                                    "functionName": "l",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 91,
+                                    "columnNumber": 19198
+                                },
+                                {
+                                    "functionName": "e._innerSub",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 0,
+                                    "columnNumber": 1202
+                                },
+                                {
+                                    "functionName": "e._next",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 0,
+                                    "columnNumber": 1018
+                                },
+                                {
+                                    "functionName": "e.next",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 0,
+                                    "columnNumber": 52869
+                                },
+                                {
+                                    "functionName": "e._next",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 53,
+                                    "columnNumber": 202927
+                                },
+                                {
+                                    "functionName": "e.next",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 0,
+                                    "columnNumber": 52869
+                                },
+                                {
+                                    "functionName": "e._next",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 7,
+                                    "columnNumber": 131686
+                                },
+                                {
+                                    "functionName": "e.next",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 0,
+                                    "columnNumber": 52869
+                                },
+                                {
+                                    "functionName": "m",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 76,
+                                    "columnNumber": 34699
+                                },
+                                {
+                                    "functionName": "e._execute",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 76,
+                                    "columnNumber": 33107
+                                },
+                                {
+                                    "functionName": "e.execute",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 76,
+                                    "columnNumber": 32923
+                                },
+                                {
+                                    "functionName": "e.flush",
+                                    "scriptId": "101",
+                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                    "lineNumber": 76,
+                                    "columnNumber": 34175
+                                }
+                            ],
+                            "parent": {
+                                "description": "setInterval",
+                                "callFrames": [
+                                    {
+                                        "functionName": "e.requestAsyncId",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 76,
+                                        "columnNumber": 32626
+                                    },
+                                    {
+                                        "functionName": "e.schedule",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 76,
+                                        "columnNumber": 32524
+                                    },
+                                    {
+                                        "functionName": "t.schedule",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 76,
+                                        "columnNumber": 33631
+                                    },
+                                    {
+                                        "functionName": "e.schedule",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 76,
+                                        "columnNumber": 34047
+                                    },
+                                    {
+                                        "functionName": "",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 76,
+                                        "columnNumber": 34591
+                                    },
+                                    {
+                                        "functionName": "t._trySubscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32602
+                                    },
+                                    {
+                                        "functionName": "t.subscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32385
+                                    },
+                                    {
+                                        "functionName": "t.call",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 131357
+                                    },
+                                    {
+                                        "functionName": "t.subscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32253
+                                    },
+                                    {
+                                        "functionName": "t.call",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 53,
+                                        "columnNumber": 202415
+                                    },
+                                    {
+                                        "functionName": "t.subscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32253
+                                    },
+                                    {
+                                        "functionName": "t.call",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 0,
+                                        "columnNumber": 745
+                                    },
+                                    {
+                                        "functionName": "t.subscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32253
+                                    },
+                                    {
+                                        "functionName": "t.call",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 53,
+                                        "columnNumber": 202415
+                                    },
+                                    {
+                                        "functionName": "t.subscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32253
+                                    },
+                                    {
+                                        "functionName": "t.call",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 91,
+                                        "columnNumber": 4837
+                                    },
+                                    {
+                                        "functionName": "t.subscribe",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 7,
+                                        "columnNumber": 32253
+                                    },
+                                    {
+                                        "functionName": "l",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 91,
+                                        "columnNumber": 19198
+                                    },
+                                    {
+                                        "functionName": "e._innerSub",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 60,
+                                        "columnNumber": 95150
+                                    },
+                                    {
+                                        "functionName": "e._tryNext",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 60,
+                                        "columnNumber": 95031
+                                    },
+                                    {
+                                        "functionName": "e._next",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 60,
+                                        "columnNumber": 94854
+                                    },
+                                    {
+                                        "functionName": "e.notifyComplete",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 60,
+                                        "columnNumber": 95463
+                                    },
+                                    {
+                                        "functionName": "e._complete",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 91,
+                                        "columnNumber": 18777
+                                    },
+                                    {
+                                        "functionName": "e.complete",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 0,
+                                        "columnNumber": 53033
+                                    },
+                                    {
+                                        "functionName": "",
+                                        "scriptId": "101",
+                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                        "lineNumber": 0,
+                                        "columnNumber": 66465
+                                    }
+                                ],
+                                "parent": {
+                                    "description": "Promise.then",
+                                    "callFrames": [
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 0,
+                                            "columnNumber": 66424
+                                        },
+                                        {
+                                            "functionName": "t._trySubscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32602
+                                        },
+                                        {
+                                            "functionName": "t.subscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32385
+                                        },
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 91,
+                                            "columnNumber": 49348
+                                        },
+                                        {
+                                            "functionName": "t._trySubscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32602
+                                        },
+                                        {
+                                            "functionName": "t.subscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32385
+                                        },
+                                        {
+                                            "functionName": "l",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 91,
+                                            "columnNumber": 19198
+                                        },
+                                        {
+                                            "functionName": "e._innerSub",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 60,
+                                            "columnNumber": 95150
+                                        },
+                                        {
+                                            "functionName": "e._tryNext",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 60,
+                                            "columnNumber": 95031
+                                        },
+                                        {
+                                            "functionName": "e._next",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 60,
+                                            "columnNumber": 94854
+                                        },
+                                        {
+                                            "functionName": "e.next",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 0,
+                                            "columnNumber": 52869
+                                        },
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 132058
+                                        },
+                                        {
+                                            "functionName": "t._trySubscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32602
+                                        },
+                                        {
+                                            "functionName": "t.subscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32385
+                                        },
+                                        {
+                                            "functionName": "t.call",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 60,
+                                            "columnNumber": 94530
+                                        },
+                                        {
+                                            "functionName": "t.subscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32253
+                                        },
+                                        {
+                                            "functionName": "t.call",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 76,
+                                            "columnNumber": 30688
+                                        },
+                                        {
+                                            "functionName": "t.subscribe",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 7,
+                                            "columnNumber": 32253
+                                        },
+                                        {
+                                            "functionName": "value",
+                                            "scriptId": "103",
+                                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                            "lineNumber": 0,
+                                            "columnNumber": 183087
+                                        },
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "103",
+                                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                            "lineNumber": 0,
+                                            "columnNumber": 116678
+                                        },
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 71,
+                                            "columnNumber": 5731
+                                        },
+                                        {
+                                            "functionName": "m.dispatch",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 71,
+                                            "columnNumber": 7063
+                                        },
+                                        {
+                                            "functionName": "dispatch",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 71,
+                                            "columnNumber": 3398
+                                        },
+                                        {
+                                            "functionName": "after",
+                                            "scriptId": "103",
+                                            "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                            "lineNumber": 0,
+                                            "columnNumber": 184875
+                                        },
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 71,
+                                            "columnNumber": 7187
+                                        },
+                                        {
+                                            "functionName": "",
+                                            "scriptId": "101",
+                                            "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                            "lineNumber": 71,
+                                            "columnNumber": 7157
+                                        }
+                                    ],
+                                    "parent": {
+                                        "description": "Promise.then",
+                                        "callFrames": [
+                                            {
+                                                "functionName": "m.dispatch",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 71,
+                                                "columnNumber": 7076
+                                            },
+                                            {
+                                                "functionName": "dispatch",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 71,
+                                                "columnNumber": 3398
+                                            },
+                                            {
+                                                "functionName": "i.dispatch",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 71,
+                                                "columnNumber": 5037
+                                            },
+                                            {
+                                                "functionName": "",
+                                                "scriptId": "103",
+                                                "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                "lineNumber": 0,
+                                                "columnNumber": 228917
+                                            },
+                                            {
+                                                "functionName": "l",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 7,
+                                                "columnNumber": 87229
+                                            },
+                                            {
+                                                "functionName": "",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 7,
+                                                "columnNumber": 88567
+                                            },
+                                            {
+                                                "functionName": "forEach.t.<computed>",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 7,
+                                                "columnNumber": 87652
+                                            },
+                                            {
+                                                "functionName": "r",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 28,
+                                                "columnNumber": 17491
+                                            },
+                                            {
+                                                "functionName": "s",
+                                                "scriptId": "101",
+                                                "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                "lineNumber": 28,
+                                                "columnNumber": 17694
+                                            }
+                                        ],
+                                        "parent": {
+                                            "description": "Promise.then",
+                                            "callFrames": [
+                                                {
+                                                    "functionName": "r",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 28,
+                                                    "columnNumber": 17562
+                                                },
+                                                {
+                                                    "functionName": "s",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 28,
+                                                    "columnNumber": 17694
+                                                },
+                                                {
+                                                    "functionName": "",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 28,
+                                                    "columnNumber": 17753
+                                                },
+                                                {
+                                                    "functionName": "",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 28,
+                                                    "columnNumber": 17634
+                                                },
+                                                {
+                                                    "functionName": "",
+                                                    "scriptId": "103",
+                                                    "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                    "lineNumber": 0,
+                                                    "columnNumber": 229472
+                                                },
+                                                {
+                                                    "functionName": "",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 71,
+                                                    "columnNumber": 5731
+                                                },
+                                                {
+                                                    "functionName": "m.dispatch",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 71,
+                                                    "columnNumber": 7063
+                                                },
+                                                {
+                                                    "functionName": "dispatch",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 71,
+                                                    "columnNumber": 3398
+                                                },
+                                                {
+                                                    "functionName": "i.dispatch",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 71,
+                                                    "columnNumber": 5037
+                                                },
+                                                {
+                                                    "functionName": "",
+                                                    "scriptId": "103",
+                                                    "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                    "lineNumber": 0,
+                                                    "columnNumber": 226723
+                                                },
+                                                {
+                                                    "functionName": "l",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 7,
+                                                    "columnNumber": 87229
+                                                },
+                                                {
+                                                    "functionName": "",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 7,
+                                                    "columnNumber": 88567
+                                                },
+                                                {
+                                                    "functionName": "forEach.t.<computed>",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 7,
+                                                    "columnNumber": 87652
+                                                },
+                                                {
+                                                    "functionName": "r",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 28,
+                                                    "columnNumber": 17491
+                                                },
+                                                {
+                                                    "functionName": "s",
+                                                    "scriptId": "101",
+                                                    "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                    "lineNumber": 28,
+                                                    "columnNumber": 17694
+                                                }
+                                            ],
+                                            "parent": {
+                                                "description": "Promise.then",
+                                                "callFrames": [
+                                                    {
+                                                        "functionName": "r",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 28,
+                                                        "columnNumber": 17562
+                                                    },
+                                                    {
+                                                        "functionName": "s",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 28,
+                                                        "columnNumber": 17694
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 28,
+                                                        "columnNumber": 17753
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 28,
+                                                        "columnNumber": 17634
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 226886
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 5731
+                                                    },
+                                                    {
+                                                        "functionName": "m.dispatch",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 7063
+                                                    },
+                                                    {
+                                                        "functionName": "dispatch",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 3398
+                                                    },
+                                                    {
+                                                        "functionName": "i.dispatch",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 5037
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 226125
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 5731
+                                                    },
+                                                    {
+                                                        "functionName": "m.dispatch",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 7063
+                                                    },
+                                                    {
+                                                        "functionName": "dispatch",
+                                                        "scriptId": "101",
+                                                        "url": "https://partners.glovoapp.com/js/chunk-vendors.cd8fefe2.js",
+                                                        "lineNumber": 71,
+                                                        "columnNumber": 3398
+                                                    },
+                                                    {
+                                                        "functionName": "value",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 273354
+                                                    },
+                                                    {
+                                                        "functionName": "value",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 273252
+                                                    },
+                                                    {
+                                                        "functionName": "kn",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 482297
+                                                    },
+                                                    {
+                                                        "functionName": "cd49",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 482938
+                                                    },
+                                                    {
+                                                        "functionName": "u",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 5288
+                                                    },
+                                                    {
+                                                        "functionName": "0",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 13859
+                                                    },
+                                                    {
+                                                        "functionName": "u",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 5288
+                                                    },
+                                                    {
+                                                        "functionName": "r",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 459
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 13280
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 13284
+                                                    },
+                                                    {
+                                                        "functionName": "",
+                                                        "scriptId": "103",
+                                                        "url": "https://partners.glovoapp.com/js/app.437a4655.js",
+                                                        "lineNumber": 0,
+                                                        "columnNumber": 13829
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "_priority": "High",
+    "_resourceType": "xhr",
+    "cache": {},
+    "connection": "6223",
+    "pageref": "page_1",
+    "request": {
+        "method": "GET",
+        "url": "https://api.glovoapp.com/cs/sa/store_addresses/orders?storeAddressIds=244001",
+        "httpVersion": "http/2.0",
+        "headers": [
+            {
+                "name": ":method",
+                "value": "GET"
+            },
+            {
+                "name": ":authority",
+                "value": "api.glovoapp.com"
+            },
+            {
+                "name": ":scheme",
+                "value": "https"
+            },
+            {
+                "name": ":path",
+                "value": "/cs/sa/store_addresses/orders?storeAddressIds=244001"
+            },
+            {
+                "name": "pragma",
+                "value": "no-cache"
+            },
+            {
+                "name": "cache-control",
+                "value": "no-cache"
+            },
+            {
+                "name": "sec-ch-ua",
+                "value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""
+            },
+            {
+                "name": "glovo-api-version",
+                "value": "undefined"
+            },
+            {
+                "name": "glovo-app-version",
+                "value": "1135"
+            },
+            {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+            },
+            {
+                "name": "glovo-app-platform",
+                "value": "web"
+            },
+            {
+                "name": "glovo-language-code",
+                "value": "uk"
+            },
+            {
+                "name": "glovo-partner-device-id",
+                "value": "547fabf9-11b8-450d-91bf-46f791e29d32"
+            },
+            {
+                "name": "accept",
+                "value": "application/json, text/plain, */*"
+            },
+            {
+                "name": "glovo-app-type",
+                "value": "partners-webapp"
+            },
+            {
+                "name": "authorization",
+                "value": "eyJraWQiOiJvbGQiLCJhbGciOiJSUzUxMiJ9.eyJpYXQiOjE2MzkwODI2OTUsImlzcyI6ImJhY2tlbmQiLCJleHAiOjE2MzkwODM4OTUsInJvbGUiOiJBQ0NFU1MiLCJwYXlsb2FkIjoie1widXNlclJvbGVcIjpcIlNUT1JFX0FETUlOXCIsXCJpc1N0YWZmXCI6ZmFsc2UsXCJwZXJtaXNzaW9uR3JvdXBzXCI6W10sXCJjaXR5R3JvdXBzXCI6W10sXCJ1c2VySWRcIjo0OTM0ODA3OCxcImdyYW50VHlwZVwiOlwiUEFTU1dPUkRcIn0iLCJ2ZXJzaW9uIjoiVjIiLCJqdGkiOiJhZjZlNGI2Zi03NDE3LTRiY2ItYmZkMy0xYzA2OWY3ZmMwYmYifQ.ilsU04EGhoB1hkVPJ6YM-Shq0IiLWqNmxiAD7FAQUwqBzofPXLxq3uX714xZSd0PPgWoNQnmNw0MWASGr7fJHnGQCQz1Cr21KyWPHOkdrQ1FAXxSkc9Bx6BBsEcs1kTIny8myA5iuveYHj8t3o0tvuetpznGl9xCUFT69Lsisl77wRpdHmS8tUENZzQljJfpGvCkIxfEkayNE0SMs37-ipZWJYaloOl1aqpeII1TH9evR3ZPpeasClSTWFwsFMjyChPYdTvnrvUeG1pCGroL5D_M4fyjuDhw_7LelmydayMKOJOfhIQKbHGmNyPfwG1mbcJkYznuReSUZ320bha_Xw"
+            },
+            {
+                "name": "content-type",
+                "value": "application/json"
+            },
+            {
+                "name": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.45 Safari/537.36"
+            },
+            {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+            },
+            {
+                "name": "origin",
+                "value": "https://partners.glovoapp.com"
+            },
+            {
+                "name": "sec-fetch-site",
+                "value": "same-site"
+            },
+            {
+                "name": "sec-fetch-mode",
+                "value": "cors"
+            },
+            {
+                "name": "sec-fetch-dest",
+                "value": "empty"
+            },
+            {
+                "name": "referer",
+                "value": "https://partners.glovoapp.com/"
+            },
+            {
+                "name": "accept-encoding",
+                "value": "gzip, deflate, br"
+            },
+            {
+                "name": "accept-language",
+                "value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6"
+            }
+        ],
+        "queryString": [
+            {
+                "name": "storeAddressIds",
+                "value": "244001"
+            }
+        ],
+        "cookies": [],
+        "headersSize": -1,
+        "bodySize": 0
+    },
+    "response": {
+        "status": 200,
+        "statusText": "",
+        "httpVersion": "http/2.0",
+        "headers": [
+            {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8"
+            },
+            {
+                "name": "content-length",
+                "value": "66"
+            },
+            {
+                "name": "date",
+                "value": "Thu, 09 Dec 2021 20:58:57 GMT"
+            },
+            {
+                "name": "access-control-allow-headers",
+                "value": "origin, x-requested-with, facebook-token, content-type, Cache-Control, Authorization, glovo-api-version, Glovo-Delivery-Location-Latitude,Glovo-Delivery-Location-Longitude, Glovo-Delivery-Location-Accuracy, Glovo-Delivery-Location-Timestamp,Glovo-App-Version, Glovo-App-Platform, Glovo-App-Type, Glovo-App-Platform, Glovo-Device-Id, Glovo-Partner-Device-Id, Glovo-Language-Code, Glovo-Idempotency, Glovo-Location-City-Code, Glovo-App-Development-State, password-recovery-token, x-datadog-origin, x-datadog-parent-id, x-datadog-sampled, x-datadog-sampling-priority, x-datadog-trace-id"
+            },
+            {
+                "name": "access-control-allow-methods",
+                "value": "GET, POST, PUT, DELETE, PATCH"
+            },
+            {
+                "name": "access-control-allow-origin",
+                "value": "https://partners.glovoapp.com"
+            },
+            {
+                "name": "access-control-max-age",
+                "value": "86400"
+            },
+            {
+                "name": "server",
+                "value": "nginx"
+            },
+            {
+                "name": "vary",
+                "value": "Accept-Encoding"
+            },
+            {
+                "name": "x-cache",
+                "value": "Miss from cloudfront"
+            },
+            {
+                "name": "via",
+                "value": "1.1 7d96f66bed58c00decdf9696146921d8.cloudfront.net (CloudFront)"
+            },
+            {
+                "name": "x-amz-cf-pop",
+                "value": "BUD50-C1"
+            },
+            {
+                "name": "x-amz-cf-id",
+                "value": "i3HSY5LZ5XavXQPrM8j0chLSEOS_KWxgobwmV75K9t1NIBTBvri3RQ=="
+            }
+        ],
+        "cookies": [],
+        "content": {
+            "size": 66,
+            "mimeType": "application/json"
+        },
+        "redirectURL": "",
+        "headersSize": -1,
+        "bodySize": -1,
+        "_transferSize": 899,
+        "_error": null
+    },
+    "serverIPAddress": "52.84.111.32",
+    "startedDateTime": "2021-12-09T20:58:57.254Z",
+    "time": 180.00000000029104,
+    "timings": {
+        "blocked": 76.82799999857578,
+        "dns": -1,
+        "ssl": -1,
+        "connect": -1,
+        "send": 0.14600000000000013,
+        "wait": 101.44999999932782,
+        "receive": 1.5760000023874454,
+        "_blocked_queueing": 75.40199999857577
+    }
+}
